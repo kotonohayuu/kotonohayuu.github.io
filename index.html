@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミング超初心者ガイド</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🚀 プログラミング超初心者ガイド</h1>
+        <p>プログラミングを始めたい方のための完全ガイド</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#what-is-programming">プログラミングとは？</a></li>
+            <li><a href="#html-basics">HTML基礎</a></li>
+            <li><a href="#css-basics">CSS基礎</a></li>
+            <li><a href="#javascript-basics">JavaScript基礎</a></li>
+            <li><a href="#practice">練習問題</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="what-is-programming" class="lesson">
+            <h2>📚 プログラミングとは？</h2>
+            <div class="content">
+                <p>プログラミングとは、コンピュータに「どんな動きをしてほしいか」を、私たちの言葉（日本語など）ではなく、コンピュータが理解できる「特別な言葉（プログラミング言語）」で伝えることです。</p>
+                
+                <div class="example-box">
+                    <h3>簡単な例</h3>
+                    <p>人間：「おはよう」と言って</p>
+                    <p>コンピュータ：「おはよう」と表示する</p>
+                </div>
+                
+                <p>たとえば、</p>
+                <ul>
+                    <li>人間同士なら「電気をつけて」と言えば伝わりますが、</li>
+                    <li>コンピュータには「どうやって電気をつけるか」を細かく順番に命令する必要があります。</li>
+                </ul>
+                
+                <h3>もっと身近な例</h3>
+                <p>レシピ（料理の手順）を書くのと似ています。</p>
+                <ol>
+                    <li>材料を用意する</li>
+                    <li>フライパンを熱する</li>
+                    <li>卵を割り入れる</li>
+                    <li>かき混ぜる</li>
+                    <li>盛り付ける</li>
+                </ol>
+                <p>このように、やることを一つずつ順番に書くのがプログラミングです。</p>
+                
+                <h3>プログラミングでできること</h3>
+                <ul>
+                    <li>Webサイトやアプリを作る</li>
+                    <li>ゲームを作る</li>
+                    <li>ロボットを動かす</li>
+                    <li>データを自動で整理する など</li>
+                </ul>
+                
+                <h3>このサイトで学ぶこと</h3>
+                <p>このサイトでは、Webサイトを作るための3つの言語を学びます：</p>
+                <ul>
+                    <li><strong>HTML</strong> - ページの「骨組み」を作る言語</li>
+                    <li><strong>CSS</strong> - ページの「見た目・デザイン」を整える言語</li>
+                    <li><strong>JavaScript</strong> - ページに「動き」や「反応」をつける言語</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="html-basics" class="lesson">
+            <h2>🏗️ HTML基礎</h2>
+            <div class="content">
+                <p>HTMLは、Webページの「骨組み」や「構造」を作る言語です。家を建てるときの「設計図」や「柱や壁」のような役割をします。</p>
+                
+                <h3>HTMLって何？</h3>
+                <p>HTMLは「HyperText Markup Language（ハイパーテキスト・マークアップ・ランゲージ）」の略です。Webページの内容を、コンピュータが理解できる形で整理して書くための言語です。</p>
+                
+                <div class="example-box">
+                    <h3>身近な例で理解しよう</h3>
+                    <p><strong>新聞や雑誌の構成</strong></p>
+                    <ul>
+                        <li>大きな見出し（タイトル）</li>
+                        <li>中くらいの見出し（章のタイトル）</li>
+                        <li>本文（文章）</li>
+                        <li>写真や図</li>
+                        <li>リンク（関連記事への案内）</li>
+                    </ul>
+                    <p>HTMLも同じように、Webページの各部分を「見出し」「文章」「画像」「リンク」などに分けて整理します。</p>
+                </div>
+                <h3>基本的なHTMLの構造</h3>
+                <div class="code-example">
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;私の最初のページ&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;こんにちは！&lt;/h1&gt;
+    &lt;p&gt;これは私の最初のWebページです。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+                <p style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【&lt; と &gt;（山かっこ）の意味】</strong><br>
+                    <span style="margin-left:1em;">HTMLでは、タグの始まりと終わりを<code>&lt;</code>と<code>&gt;</code>（山かっこ）で囲みます。<br>
+                    例：<code>&lt;h1&gt;見出し&lt;/h1&gt;</code> のように使います。</span>
+                </p>
+                <h3>よく使うHTMLタグ</h3>
+                <div class="tag-list">
+                    <div class="tag-item">
+                        <code>&lt;h1&gt;</code> - 大きな見出し
+                    </div>
+                    <div class="tag-item">
+                        <code>&lt;h2&gt;</code> - 中くらいの見出し
+                    </div>
+                    <div class="tag-item">
+                        <code>&lt;p&gt;</code> - 段落（文章）
+                    </div>
+                    <div class="tag-item">
+                        <code>&lt;div&gt;</code> - 箱（グループ化）
+                    </div>
+                    <div class="tag-item">
+                        <code>&lt;img&gt;</code> - 画像
+                    </div>
+                    <div class="tag-item">
+                        <code>&lt;a&gt;</code> - リンク
+                    </div>
+                </div>
+                <div class="tag-explanation" style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【HTMLタグの詳しい説明】</strong><br>
+                    <ul style="margin-left:1.5em;">
+                        <li><code>&lt;h1&gt; ～ &lt;/h1&gt;</code>：ページで一番大きな見出しを表します。タイトルや重要な項目に使います。</li>
+                        <li><code>&lt;h2&gt; ～ &lt;/h2&gt;</code>：<code>&lt;h1&gt;</code>より少し小さい見出しです。章やセクションのタイトルに使います。</li>
+                        <li><code>&lt;p&gt; ～ &lt;/p&gt;</code>：文章や説明など、まとまったテキスト（段落）を表します。</li>
+                        <li><code>&lt;div&gt; ～ &lt;/div&gt;</code>：いろいろな要素をまとめてグループ化するための「箱」です。デザインやレイアウト調整によく使います。</li>
+                        <li><code>&lt;img&gt;</code>：画像を表示します。<code>src</code>属性で画像ファイルの場所を指定します（例：<code>&lt;img src="sample.jpg"&gt;</code>）。</li>
+                        <li><code>&lt;a&gt; ～ &lt;/a&gt;</code>：リンクを作ります。<code>href</code>属性でリンク先のURLを指定します（例：<code>&lt;a href="https://example.com"&gt;こちら&lt;/a&gt;</code>）。</li>
+                    </ul>
+                </div>
+                <p style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>※HTMLタグには必ず終了タグ（例: <code>&lt;/h1&gt;</code>）が必要です。<br>終了タグは<code>&lt;/h1&gt;</code>のように、スラッシュ（/）を付けて書きます。</strong>
+                </p>
+                <div class="interactive-demo">
+                    <h3>🔧 実際に試してみよう！</h3>
+                    <div class="demo-container">
+                        <div class="code-input">
+                            <h4>HTMLを入力：</h4>
+                            <textarea id="htmlInput" placeholder="ここにHTMLを入力してください..."></textarea>
+                        </div>
+                        <div class="preview">
+                            <h4>プレビュー：</h4>
+                            <div id="htmlPreview"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="css-basics" class="lesson">
+            <h2>🎨 CSS基礎</h2>
+            <div class="content">
+                <p>CSSは、HTMLで作ったページの「見た目」や「デザイン」を整える言語です。家の「内装」や「外装の色」を決めるような役割をします。</p>
+                
+                <h3>CSSって何？</h3>
+                <p>CSSは「Cascading Style Sheets（カスケーディング・スタイル・シーツ）」の略です。HTMLで作った骨組みに、色や大きさ、配置などの「スタイル」を加えるための言語です。</p>
+                
+                <div class="example-box">
+                    <h3>身近な例で理解しよう</h3>
+                    <p><strong>服のデザイン</strong></p>
+                    <ul>
+                        <li>色（赤、青、緑など）</li>
+                        <li>サイズ（S、M、Lなど）</li>
+                        <li>素材（綿、シルク、ウールなど）</li>
+                        <li>デザイン（シンプル、派手、カジュアルなど）</li>
+                    </ul>
+                    <p>CSSも同じように、HTMLの要素に「色」「大きさ」「フォント」「配置」などのスタイルを指定します。</p>
+                </div>
+                
+                <h3>CSSの基本</h3>
+                <div class="code-example">
+                    <pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    font-size: 16px;
+    text-align: left;
+}</code></pre>
+                </div>
+                <p style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【{ と }（波かっこ）の意味】</strong><br>
+                    <span style="margin-left:1em;">CSSでは、どこからどこまでがスタイルの内容かを<code>{</code>と<code>}</code>（波かっこ）で囲みます。<br>
+                    例：<code>h1 { color: blue; }</code> のように使います。</span>
+                </p>
+
+                <h3>よく使うCSSプロパティ</h3>
+                <div class="css-properties">
+                    <div style="margin-bottom: 1em;">
+                        <strong>【h1でよく使うCSSプロパティ】</strong>
+                        <ul style="margin-left:1.5em;">
+                            <li><code>color</code> - 文字の色</li>
+                            <li><code>font-size</code> - 文字の大きさ</li>
+                            <li><code>text-align</code> - 文字の位置（左・中央・右揃え）</li>
+                            <li><code>margin</code> - 見出しの上下余白</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>【pでよく使うCSSプロパティ】</strong>
+                        <ul style="margin-left:1.5em;">
+                            <li><code>color</code> - 文字の色</li>
+                            <li><code>line-height</code> - 行間</li>
+                            <li><code>margin</code> - 段落の余白</li>
+                            <li><code>text-align</code> - 文字の位置（左・中央・右揃え）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="css-explanation" style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【CSSプロパティの詳しい説明】</strong><br>
+                    <ul style="margin-left:1.5em;">
+                        <li><code>color</code>：文字の色を指定します。例：<code>color: red;</code>（文字を赤色にする）</li>
+                        <li><code>font-size</code>：文字の大きさを指定します。例：<code>font-size: 24px;</code>（文字を24ピクセルにする）</li>
+                        <li><code>background-color</code>：背景色を指定します。例：<code>background-color: yellow;</code>（背景を黄色にする）</li>
+                        <li><code>margin</code>：要素の外側の余白（スペース）を指定します。例：<code>margin: 10px;</code>（外側に10ピクセルの余白）</li>
+                        <li><code>padding</code>：要素の内側の余白（スペース）を指定します。例：<code>padding: 10px;</code>（内側に10ピクセルの余白）</li>
+                        <li><code>border</code>：枠線をつけます。例：<code>border: 1px solid black;</code>（1ピクセルの黒い実線の枠）</li>
+                        <li><code>text-align</code>：文字の位置を指定します。例：<code>text-align: center;</code>（中央揃え）、<code>text-align: right;</code>（右揃え）</li>
+                    </ul>
+                    <div style="margin-top:1em;">
+                        <strong>【h1とpの役割・使い方】</strong><br>
+                        <ul style="margin-left:1.5em;">
+                            <li><code>h1</code>：ページで一番大きな見出しです。タイトルや重要な項目に使います。CSSで色や大きさを変えることで、より目立たせることができます。
+                                <ul style="margin-left:1.5em;">
+                                    <li>例：<code>color</code>（文字色）、<code>font-size</code>（文字の大きさ）、<code>text-align</code>（中央揃え）</li>
+                                    <li>例：<code>h1 { color: blue; font-size: 32px; text-align: center; }</code></li>
+                                </ul>
+                            </li>
+                            <li><code>p</code>：文章や説明など、まとまったテキスト（段落）を表します。CSSで文字色や行間、余白などを調整できます。
+                                <ul style="margin-left:1.5em;">
+                                    <li>例：<code>color</code>（文字色）、<code>line-height</code>（行間）、<code>margin</code>（段落の余白）</li>
+                                    <li>例：<code>p { color: gray; line-height: 1.8; margin: 16px 0; }</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【border（枠線）とは？】</strong><br>
+                    <span style="margin-left:1em;">borderは「枠線」をつけるプロパティです。たとえば、文章や画像のまわりに線をつけて目立たせたいときに使います。<br>
+                    例：<code>border: 1px solid black;</code>（1ピクセルの黒い実線の枠をつける）</span>
+                </p>
+                <p style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【:（コロン）の意味】</strong><br>
+                    <span style="margin-left:1em;">CSSでは「プロパティ名: 値;」のように、コロン（:）で「何をどうするか」を指定します。<br>
+                    例：<code>color: red;</code>（色を赤にする）</span>
+                </p>
+
+                <div class="interactive-demo">
+                    <h3>🔧 CSSを試してみよう！</h3>
+                    <div class="demo-container">
+                        <div class="code-input">
+                            <h4>CSSを入力：</h4>
+                            <textarea id="cssInput" placeholder="ここにCSSを入力してください..."></textarea>
+                        </div>
+                        <div class="preview">
+                            <h4>プレビュー：</h4>
+                            <div id="cssPreview">
+                                <h1>こんにちは！</h1>
+                                <p>これはCSSでスタイルを適用したテキストです。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="javascript-basics" class="lesson">
+            <h2>⚡ JavaScript基礎</h2>
+            <div class="content">
+                <p>JavaScriptは、Webページに「動き」や「反応」を加える言語です。家の「電気スイッチ」や「リモコン」のような役割をします。</p>
+                
+                <h3>JavaScriptって何？</h3>
+                <p>JavaScriptは、Webページを「インタラクティブ（双方向的）」にするための言語です。ユーザーの操作（クリック、入力など）に反応して、ページの内容を動的に変更できます。</p>
+                
+                <div class="example-box">
+                    <h3>身近な例で理解しよう</h3>
+                    <p><strong>テレビのリモコン</strong></p>
+                    <ul>
+                        <li>ボタンを押すとチャンネルが変わる</li>
+                        <li>音量ボタンで音の大きさを調整</li>
+                        <li>電源ボタンでテレビのオン/オフ</li>
+                        <li>メニューボタンで設定画面を表示</li>
+                    </ul>
+                    <p>JavaScriptも同じように、ボタンをクリックしたり、フォームに入力したりすると、ページの内容が変わったり、新しい情報が表示されたりします。</p>
+                </div>
+                
+                <h3>JavaScriptの基本</h3>
+                <div class="code-example">
+                    <pre><code>// 文字を表示する
+console.log("こんにちは！");
+
+// 変数（データを保存する箱）
+let name = "太郎";
+console.log("こんにちは、" + name + "さん！");
+
+// 関数（処理をまとめたもの）
+function sayHello() {
+    alert("こんにちは！");
+}</code></pre>
+                </div>
+
+                <h3>よく使うJavaScript</h3>
+                <div class="js-examples">
+                    <div class="example-item">
+                        <h4>アラートを表示</h4>
+                        <code>alert("メッセージ");</code>
+                        <button onclick="alert('こんにちは！')">試してみる</button>
+                    </div>
+                    <div class="example-item">
+                        <h4>文字を変更</h4>
+                        <code>document.getElementById("id").innerHTML = "新しい文字";</code>
+                        <button onclick="changeText()">文字を変更</button>
+                        <p id="changeableText">この文字が変わります</p>
+                    </div>
+                </div>
+                <div class="js-explanation" style="margin-top:0.5em; color:#444; font-size:1em;">
+                    <strong>【JavaScriptの基本用語・使い方の解説】</strong><br>
+                    <ul style="margin-left:1.5em;">
+                        <li><code>console.log()</code>：コンソール（開発者ツール）にメッセージや値を表示します。プログラムの動きを確認したいときに便利です。</li>
+                        <li><code>let</code>：変数（データを入れる箱）を作るときに使います。例：<code>let name = "太郎";</code></li>
+                        <li><code>function</code>：処理をまとめて「関数」として定義します。例：<code>function sayHello() { ... }</code></li>
+                        <li><code>alert()</code>：画面にポップアップでメッセージを表示します。例：<code>alert("こんにちは！");</code></li>
+                        <li><code>document.getElementById()</code>：HTMLの特定の要素（idで指定）をJavaScriptから操作できます。</li>
+                        <li><code>innerHTML</code>：HTML要素の中身（テキストやタグ）を書き換えます。</li>
+                    </ul>
+                </div>
+
+                <div class="interactive-demo">
+                    <h3>🔧 JavaScriptを試してみよう！</h3>
+                    <div class="demo-container">
+                        <div class="code-input">
+                            <h4>JavaScriptを入力：</h4>
+                            <textarea id="jsInput" placeholder="ここにJavaScriptを入力してください..."></textarea>
+                        </div>
+                        <div class="preview">
+                            <h4>実行結果：</h4>
+                            <button onclick="runJavaScript()">実行する</button>
+                            <div id="jsOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="practice" class="lesson">
+            <h2>📝 練習問題</h2>
+            <div class="content">
+                <h3>レベル1: HTML</h3>
+                <div class="practice-question">
+                    <p><strong>問題:</strong> 自分の名前を大きな見出しで表示するHTMLを作ってください。</p>
+                    <div class="answer-box">
+                        <textarea id="answer1" placeholder="ここに答えを書いてください..."></textarea>
+                        <button onclick="checkAnswer(1)">答えを確認</button>
+                    </div>
+                </div>
+
+                <h3>レベル2: CSS</h3>
+                <div class="practice-question">
+                    <p><strong>問題:</strong> 見出しを赤色にして、中央揃えにするCSSを書いてください。</p>
+                    <div class="answer-box">
+                        <textarea id="answer2" placeholder="ここに答えを書いてください..."></textarea>
+                        <button onclick="checkAnswer(2)">答えを確認</button>
+                    </div>
+                </div>
+
+                <h3>レベル3: JavaScript</h3>
+                <div class="practice-question">
+                    <p><strong>問題:</strong> ボタンをクリックしたときに「こんにちは！」とアラートを表示するJavaScriptを書いてください。</p>
+                    <div class="answer-box">
+                        <textarea id="answer3" placeholder="ここに答えを書いてください..."></textarea>
+                        <button onclick="checkAnswer(3)">答えを確認</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 プログラミング超初心者ガイド - 一緒にプログラミングを学びましょう！</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
